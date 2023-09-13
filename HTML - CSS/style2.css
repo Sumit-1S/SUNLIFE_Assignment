@@ -1,0 +1,22 @@
+:root{
+    --primar-color: #455bc6;
+    --accent-color: #6d0f51;
+    --test-color: #4a5c09;
+}
+
+html{
+    background-color: var(--primar-color);
+}
+
+h3{
+    border-bottom: 2px solid var(--test-color);
+}
+
+button{
+    color: var(--accent-color);
+    border: 1px solid var(--test-color);
+}
+
+p{
+    color: var(--primar-color);
+}

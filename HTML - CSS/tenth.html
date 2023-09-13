@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *,
+        *::after,
+        *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit; 
+        }
+
+        html {
+        box-sizing: border-box;
+        font-size: 62.5%; 
+        }
+
+        body {
+        font-family: "Nunito", sans-serif;
+        color: #333;
+        font-weight: 300;
+        line-height: 1.6; 
+        }
+
+        .container {
+        width: 90%;
+        margin: 2rem auto; 
+        }
+
+        .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto auto; /*repeat(8, 1fr);
+        grid-template-rows: repeat(8, 5vw); */
+        grid-gap: 18px;
+        }
+
+        .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; 
+        }
+
+        .gallery__item:hover{
+        opacity: 0.7;
+        }
+
+        .gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 2;  */
+        /* grid-row: 1 / span 2; */
+        }
+    </style>
+    <title>Document</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="sample1.jpg" alt="Gallery image 1" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="sample2.jpg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="sample3.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="sample4.jpg" alt="Gallery image 4" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="sample1.jpg" alt="Gallery image 5" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="sample3.jpg" alt="Gallery image 6" class="gallery__img">
+                </figure>
+            </div>
+        </div>
+    </body>
+</html>

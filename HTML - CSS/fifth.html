@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto auto auto auto ;
+        }
+        .inner-class2{
+            background-color: bisque;
+            border: 1px solid black;
+        }
+        .grid-item1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .grid-item2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 8;
+        }
+        
+        .grid-item3{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        .grid-item4{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 8;
+        }
+        /*
+        .grid-item5{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 12;
+            grid-row-end: 14;
+        } */
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="inner-class2 grid-item1">HTML</div>
+        <div class="inner-class2 grid-item2">JavaScript</div>
+        <div class="inner-class2 grid-item3">CSS</div>
+        <div class="inner-class2 grid-item4">Photoshop</div>
+        <!-- <div class="inner-class2 grid-item5">Python</div> -->
+
+    </div>
+</body>
+</html>

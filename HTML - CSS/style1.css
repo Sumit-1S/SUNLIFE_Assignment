@@ -1,0 +1,15 @@
+div > p::first-letter{
+    color: blue;
+}
+div > p::first-line{
+    font-size: 20px;
+}
+.even::first-letter{
+    color: orange;
+}
+div ~ p::after{
+    content: "BYE";
+}
+div > p::before{
+    content: "WELCOME";
+}
